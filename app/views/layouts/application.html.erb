@@ -10,6 +10,24 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <header class="header">
+        <div class="inner">
+          <div class="nav">
+            <div class="nav_left">
+              <%= link_to "StrangerApp", root_path, class: :logo %>
+            </div>
+            <div class="nav_right">
+              <%= link_to "ログイン", "#" %>
+              <%= link_to "新規登録", "#" %>
+            </div>       
+          </div>
+        </div>
+      </header>
+      <%= yield %>
+      <footer class="footer">
+        <p class="copyright">Copyright © Strange app All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
