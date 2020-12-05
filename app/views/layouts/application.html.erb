@@ -20,12 +20,18 @@
         <div class="inner">
           <div class="nav">
             <div class="nav_left">
-              <%= link_to "StrangerApp", root_path, class: :logo %>
+              <%= link_to "Stranger App", root_path, class: :logo %>
             </div>
-            <div class="nav_right">
-              <%= link_to "ログイン", "#" %>
-              <%= link_to "新規登録", "#" %>
-            </div>       
+            <% if user_signed_in? %>
+              <div class="nav_right">
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              </div>
+            <% else %>  
+              <div class="nav_right">
+                <%= link_to "ログイン", new_user_session_path %>
+                <%= link_to "新規登録", new_user_registration_path %>    
+              </div> 
+            <% end %>
           </div>
         </div>
       </header>

@@ -1,10 +1,10 @@
-.registration {
+.user {
     height: 90vh;
     background-image: url("travel.jpg");
     background-size: cover;
 }
 
-.registration_inner {
+.user_inner {
     text-align: center;
     padding-top: 20px;
     font-family: 'Noto Serif JP', serif;
