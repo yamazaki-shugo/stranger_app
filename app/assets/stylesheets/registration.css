@@ -1,0 +1,29 @@
+.user {
+    height: 90vh;
+    background-image: url("travel.jpg");
+    background-size: cover;
+}
+
+.user_inner {
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.registration_inner h1 {
+    font-size: 60px;
+    padding-bottom: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.field {
+    padding-bottom: 20px;
+}
+
+.form {
+    width: 221px;
+}
+
+.birthday-form {
+    width: 70px;
+}

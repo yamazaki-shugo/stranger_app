@@ -7,7 +7,7 @@
 | email       | string  | null: false |
 | password    | string  | null: false |
 | nickname    | string  | null: false |
-| age         | text    | null: false |
+| age         | integer | null: false |
 
 ### Association
 
