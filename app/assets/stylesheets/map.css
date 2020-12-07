@@ -1,0 +1,51 @@
+.top-page {
+    display: flex;
+}
+
+.side-bar {
+    width: 500px;
+    background-color: rgb(199, 182, 147);
+}
+
+.memory-record {
+    font-size: 20px;
+}
+
+.memory-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.memory-tab {
+    border: 1px solid rgb(199, 182, 147);
+    background-color: white;
+    text-align: center;
+    border-radius: 100%;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.memory-tab a {
+    display: block;
+}
+
+.google-map {
+    width: calc(100vw - 500px);
+    height: 88vh;
+    position: relative;
+}
+
+.map-form {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    z-index: 6;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
