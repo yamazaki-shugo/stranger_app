@@ -55,6 +55,14 @@
     justify-content: space-between;
   }
 
+  .nav_left {
+    margin-left: 10px;
+  }
+
+  .nav_right {
+    margin-right: 10px;
+  }
+
   .logo {
     width: 200px;
   }
