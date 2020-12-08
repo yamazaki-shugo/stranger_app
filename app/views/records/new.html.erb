@@ -1,0 +1,20 @@
+<div class="top-page">
+    <div class="side-bar">
+        <div class="memory-btn">
+            <div class="memory-make">
+                <%= link_to "記録を残す", new_record_path %>
+            </div>
+            <div class="memory-tab">
+                <%= link_to "自分の記録", "#" %>
+            </div>
+            <div class="memory-tab">
+                <%= link_to "みんなの記録", "#" %>
+            </div>
+        </div>
+        <div class="memory-form">
+            
+        </div>
+    </div>
+
+    <%= render "maps/google_maps"%>
+</div>
