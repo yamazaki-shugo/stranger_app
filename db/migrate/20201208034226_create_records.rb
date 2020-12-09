@@ -5,6 +5,7 @@ class CreateRecords < ActiveRecord::Migration[6.0]
       t.text :content, null: false
       t.integer :prefecture_id
       t.string :place, null: false
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end
