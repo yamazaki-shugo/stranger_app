@@ -1,0 +1,11 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     record:
+       title: タイトル
+       image: 画像
+       prefecture_id: 都道府県
+       content: 感想
+       place: 場所

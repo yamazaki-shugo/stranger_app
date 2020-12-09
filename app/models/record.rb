@@ -9,7 +9,7 @@ class Record < ApplicationRecord
         validates :title, length: { maximum: 30 }
         validates :content, length: { maximum: 660 }
         validates :place, length: { maximum: 23 }
-        validates :prefecture_id, numericality: { other_than: 1 }
+        validates :prefecture_id, numericality: { other_than: 1, message: "を選択してください" }
         validates :image
     end
 end

@@ -54,10 +54,11 @@
 /* record_form */
 
 .memory-form {
-    height: 600px;
+    height: 610px;
     width: 460px;
     background-color: white;
     padding: 20px;
+    overflow: scroll;
 }
 
 .form-field {

@@ -13,6 +13,7 @@
         </div>
         <div class="memory-form">
             <%= form_with model: @record, local: true do |f| %>
+                <%= render 'shared/error_messages', model: f.object %>
                 <div class="form-field">
                     <%= f.text_field :title, id:"memory-title", placeholder:"タイトル" %>
                 </div>
