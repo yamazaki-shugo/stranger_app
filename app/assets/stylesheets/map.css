@@ -36,7 +36,7 @@
     display: block;
 }
 
-.memory-make {
+.memory-now {
     border: 1px solid rgb(199, 182, 147);
     background-color: black;
     text-align: center;
@@ -46,7 +46,7 @@
     line-height: 50px;
 }
 
-.memory-make a {
+.memory-now a {
     color: white;
     display: block;
 }

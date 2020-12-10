@@ -4,12 +4,38 @@
             <div class="memory-tab">
                 <%= link_to "記録を残す", new_record_path %>
             </div>
-            <div class="memory-tab">
-                <%= link_to "自分の記録", "#" %>
+            <div class="memory-now">
+                <%= link_to "自分の記録", root_path %>
             </div>
             <div class="memory-tab">
                 <%= link_to "みんなの記録", "#" %>
             </div>
+        </div>
+        <div class="memory">
+            <% @records.each do |record| %>
+                <div class="memory-table">
+                    <div class="memory-top">
+                        <div class="memory-title">
+                            <%= record.title %>
+                        </div>
+                        <div class="memory-day">
+                            <%= l record.created_at, format: :short %>
+                        </div>
+                    </div>
+                    <div class="memory-image">
+                        <%= image_tag record.image %>
+                    </div>
+                    <div class="memory-place">
+                        <%= "in #{record.prefecture.name} #{record.place}"%>
+                    </div>
+                    <div class="memory-content">
+                        <%= record.content %>
+                    </div>
+                    <div class="memory-comment">
+                    
+                    </div>
+                </div>
+            <% end %>
         </div>
     </div>
 
