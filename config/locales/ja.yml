@@ -1,0 +1,16 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+     record:
+       title: タイトル
+       image: 画像
+       prefecture_id: 都道府県
+       content: 感想
+       place: 場所
+time:
+  formats:
+    default: "%Y/%m/%d %H:%M:%S"
+    long: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+    short: "%y/%m/%d %H:%M"

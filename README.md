@@ -14,14 +14,15 @@
 - has_many :memories
 - has_many :comments
 
-## memories テーブル
+## records テーブル
 
-| Column      | Type       | Options           |
-| ----------  | ---------  | ----------------- |
-| title       | string     | null: false       |
-| content     | text       | null: false       |
-| image       |            | ActiveStorage     |
-| user        | references | foreign_key: true |
+| Column        | Type       | Options           |
+| ------------  | ---------  | ----------------- |
+| title         | string     | null: false       |
+| content       | text       | null: false       |
+| prefecture_id | integer    | null: false       |
+| image         |            | ActiveStorage     |
+| user          | references | foreign_key: true |
 
 ### Association
 

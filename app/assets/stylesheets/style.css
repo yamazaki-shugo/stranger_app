@@ -81,3 +81,8 @@
     color: #fff;
     font-size: 10px;
   }
+
+  /* エラーメッセージ */
+  .error-alert {
+    font-size: 10px;
+  }

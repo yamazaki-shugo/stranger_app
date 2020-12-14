@@ -1,0 +1,40 @@
+<div class="top-page">
+    <div class="side-bar">
+        <div class="memory-btn">
+            <div class="memory-now">
+                <%= link_to "記録を残す", new_record_path %>
+            </div>
+            <div class="memory-tab">
+                <%= link_to "自分の記録", root_path %>
+            </div>
+            <div class="memory-tab">
+                <%= link_to "みんなの記録", "#" %>
+            </div>
+        </div>
+        <div class="memory-form">
+            <%= form_with model: @record, local: true do |f| %>
+                <%= render 'shared/error_messages', model: f.object %>
+                <div class="form-field">
+                    <%= f.text_field :title, id:"memory-title", placeholder:"タイトル" %>
+                </div>
+                <div class="form-place">
+                    <div class="form-field">
+                        <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {}) %>
+                    </div>
+                    <div class="form-field">
+                        <%= f.text_field :place, id:"memory-place", placeholder:"場所名" %>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <%= f.text_area :content, id:"memory-content", placeholder:"感想等自由にお書きください(660文字以内)" %>
+                </div>
+                <div class="form-field">
+                    <%= f.file_field :image, id:"memory-image" %>
+                </div>
+                    <%= f.submit "記録" ,class:"record-btn" %>
+            <% end %>
+        </div>
+    </div>
+
+    <%= render "maps/google_maps"%>
+</div>

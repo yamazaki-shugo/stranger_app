@@ -1,6 +1,6 @@
-class CreateMemories < ActiveRecord::Migration[6.0]
+class CreateRecords < ActiveRecord::Migration[6.0]
   def change
-    create_table :memories do |t|
+    create_table :records do |t|
       t.string :title, null: false
       t.text :content, null: false
       t.integer :prefecture_id
